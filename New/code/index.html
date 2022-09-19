@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn 01</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="continer"  onclick=" profile_list_of()">
+        <div class="leftside">
+            <div class="logo">
+                <img src="../src/spotify.png" alt="" style="width: 40px; margin-right: 10px;">
+                <h1 style="font-weight: 500;">Spotify<span><img src="../src/copyright.png" style="width:7px;" alt=""></span></h1>
+            </div>
+            <ul class="nav_list">
+                <li>
+                   <i class="fa-solid fa-house"></i>
+                    <h3>Home</h3>
+                </li>
+                <li>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <h3>Search</h3>
+                </li>
+                <li>
+                    <i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-music-note-list" viewBox="0 0 16 16">
+                        <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                        <path fill-rule="evenodd" d="M12 3v10h-1V3h1z"/>
+                        <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z"/>
+                        <path fill-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                    </i>
+                    <h3>Your library</h3>
+                </li>
+            </ul>
+            <ul class="nav_play_list">
+                <li>
+                    <i class="fa-solid fa-square-plus"></i>
+                    <h3>Create Playlist</h3>
+                </li>
+                <li>
+                    <i class="fa-solid fa-heart"></i>
+                    <h3>Liked Songs</h3>
+                </li>
+            </ul>
+            <div id="line"></div>
+            <ul class="play_lists">
+                <li>
+                    <p>Achraf</p>
+                </li>
+                <li>
+                    <p>Playlist 1</p>
+                </li>
+            </ul>
+            <div class="App">
+                <i class="fa-solid fa-circle-arrow-down"></i>
+                <a href="" download="#">Install App</a>
+            </div>
+        </div>
+        <div class="rightside">
+            <div class="mini_continer">
+                <div class="barside">
+                    <div class="leftbar">
+                        <span id="ret_left"><i class="fa-solid fa-angle-left"></i></span>
+                        <span id="ret_right"><i class="fa-solid fa-angle-right"></i></span>
+                    </div>
+                    <div class="rightbar">
+                        <div class="upGrade">Upgrade</div>
+                        <div class="profile" onclick="profile_list_on()">
+                            <img src="../src/profile.jpg" alt="profile" style="object-fit :cover;width:30px; height :30px; border-radius: 50%;">
+                            <p>Achraf sabbar</p>
+                            <i class="fa-solid fa-caret-down"></i>
+                            <ul class="setting"  id="profile">
+                                <li onclick='open_link("https://www.linkedin.com/in/a-sabbar/")'>
+                                    <p>Account</p>
+                                </li>
+                                <li onclick='open_link("https://github.com/a-sabbar")'>
+                                    <p>Profile</p>
+                                </li>
+                                <li onclick='open_link("https://open.spotify.com/")'>
+                                    <p>Upgrade to Premium</p>
+                                </li>
+                                <li onclick='open_link("https://www.instagram.com/achraf__sabbar/")'>
+                                    <p>Settings</p>
+                                </li>
+                                <p class="line"></p>
+                                <li onclick='open_link("https://www.instagram.com/achraf__sabbar/")'>
+                                    <p>Log out</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="last_listening">
+                    <h2 style="margin-bottom: 30px;">Good <span style="font-weight: 900;" class="time"></span></h2>
+                    <ul class="grid">
+                        <li class="div-1">
+                            <img src="../src/profile.jpg" alt="">
+                            <p>Achraf Sabbar</p>
+                            <span class="play">
+                                <i class="fa-solid fa-pause"></i>
+                                <!-- <i class="fa-solid fa-play"></i> -->
+                            </span>
+                        </li>
+                        <li class="div-2">
+                            <img src="../src/music_artist.webp" alt="">
+                            <p>Daily Mix 2</p>
+                            <span class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </span>
+                        </li>
+                        <li class="div-3">
+                            <img src="../src/music_artist.webp" alt="">
+                            <p>Daily Mix 3</p>
+                            <span class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </span>
+                        </li>
+                        <li class="div-4">
+                            <img src="../src/music_artist.webp" alt="">
+                            <p>Daily Mix 4</p>
+                            <span class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </span>
+                        </li>
+                        <li class="div-5">
+                            <img src="../src/music_artist.webp" alt="">
+                            <p>Daily Mix 5</p>
+                            <span class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </span>
+                        </li>
+                        <li class="div-6">
+                            <img src="../src/music_artist.webp" alt="">
+                            <p>Daily Mix 6</p>
+                            <span class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Jump">
+                    <span class="head-line">
+                        <h2>Jump back in</h2>
+                        <a href="#" >SEE ALL</a>
+                    </span>
+                    <ul class="grid-jump">
+                        <li class="artist">
+                            <img src="../src/profile.jpg"  alt="">
+                            <h5>Achraf Sabbar</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/dizzy.jpg"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li>
+                            <img src="../src/samurai.jpg"  alt="">
+                            <h5>Daily Mix 2</h5>
+                            <p>Teu, HoKø, Hazue and more</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/music_artist.webp"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/dizzy.jpg"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/dizzy.jpg"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/profile.jpg"  alt="">
+                            <h5>Achraf Sabbar</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/profile.jpg"  alt="">
+                            <h5>Achraf Sabbar</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/profile.jpg"  alt="">
+                            <h5>Achraf Sabbar</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/profile.jpg"  alt="">
+                            <h5>Achraf Sabbar</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/dizzy.jpg"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Jump">
+                    <span class="head-line">
+                        <h2>Mood for Achraf Sabbar</h2>
+                        <a href="#" >SEE ALL</a>
+                    </span>
+                    <ul class="grid-jump">
+                        <li class="artist">
+                            <img src="../src/profile.jpg"  alt="">
+                            <h5>Achraf Sabbar</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li>
+                            <img src="../src/samurai.jpg"  alt="">
+                            <h5>Daily Mix 2</h5>
+                            <p>Teu, HoKø, Hazue and more</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/dizzy.jpg"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/music_artist.webp"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/dizzy.jpg"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Jump">
+                    <span class="head-line">
+                        <h2>Your top mixes</h2>
+                        <a href="#" >SEE ALL</a>
+                    </span>
+                    <ul class="grid-jump">
+                        <li class="artist">
+                            <img src="../src/profile.jpg"  alt="">
+                            <h5>Achraf Sabbar</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li>
+                            <img src="../src/samurai.jpg"  alt="">
+                            <h5>Daily Mix 2</h5>
+                            <p>Teu, HoKø, Hazue and more</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/dizzy.jpg"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/music_artist.webp"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/dizzy.jpg"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Jump">
+                    <span class="head-line">
+                        <h2>Recently played</h2>
+                        <a href="#" >SEE ALL</a>
+                    </span>
+                    <ul class="grid-jump">
+                        <li class="artist">
+                            <img src="../src/profile.jpg"  alt="">
+                            <h5>Achraf Sabbar</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li>
+                            <img src="../src/samurai.jpg"  alt="">
+                            <h5>Daily Mix 2</h5>
+                            <p>Teu, HoKø, Hazue and more</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/dizzy.jpg"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/music_artist.webp"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/dizzy.jpg"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/music_artist.webp"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/dizzy.jpg"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/music_artist.webp"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/dizzy.jpg"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/music_artist.webp"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/dizzy.jpg"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Jump">
+                    <span class="head-line">
+                        <h2>your favorite artists</h2>
+                        <a href="#" >SEE ALL</a>
+                    </span>
+                    <ul class="grid-jump">
+                        <li class="artist">
+                            <img src="../src/profile.jpg"  alt="">
+                            <h5>Achraf Sabbar</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li>
+                            <img src="../src/samurai.jpg"  alt="">
+                            <h5>Daily Mix 2</h5>
+                            <p>Teu, HoKø, Hazue and more</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/dizzy.jpg"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/music_artist.webp"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/dizzy.jpg"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/music_artist.webp"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Jump">
+                    <span class="head-line">
+                        <h2>Mood</h2>
+                        <a href="#" >SEE ALL</a>
+                    </span>
+                    <ul class="grid-jump">
+                        <li class="artist">
+                            <img src="../src/profile.jpg"  alt="">
+                            <h5>Achraf Sabbar</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li>
+                            <img src="../src/samurai.jpg"  alt="">
+                            <h5>Daily Mix 2</h5>
+                            <p>Teu, HoKø, Hazue and more</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/dizzy.jpg"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/dizzy.jpg"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/dizzy.jpg"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Jump">
+                    <span class="head-line">
+                        <h2>More of what you like</h2>
+                        <a href="#" >SEE ALL</a>
+                    </span>
+                    <ul class="grid-jump">
+                        <li class="artist">
+                            <img src="../src/profile.jpg"  alt="">
+                            <h5>Achraf Sabbar</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li>
+                            <img src="../src/samurai.jpg"  alt="">
+                            <h5>Daily Mix 2</h5>
+                            <p>Teu, HoKø, Hazue and more</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/dizzy.jpg"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/music_artist.webp"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/music_artist.webp"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                        <li class="artist">
+                            <img src="../src/music_artist.webp"  alt="">
+                            <h5>Dizzy DROS</h5>
+                            <p>Artist</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="music">
+                <img src="../src/profile.jpg" style="width: 60px; height: 60px; object-fit: cover;" alt="">
+                <span>
+                    <h4>Achraf sabbar</h4>
+                    <p>1337</p>
+                </span>
+                <i class="fa-regular fa-heart" ></i>
+            </div>
+            <div class="music_audio">
+                <ul class="tools">
+                    <li id="shuffle" >
+                        <i class="fa-solid fa-shuffle"></i>
+                    </li>
+                    <li id="backward">
+                        <i class="fa-solid fa-backward-step"></i>
+                    </li>
+                    <li id="play">
+                        <i class="fa-solid fa-play" ></i>
+                    </li>
+                    <li id="forward" >
+                        <i class="fa-solid fa-forward-step"></i>
+                    </li>
+                    <li id="repeat">
+                        <i class="fa-solid fa-repeat"></i>
+                    </li> 
+                </ul>
+                <div class="continer_music_line">
+                    <p class="time">01:45</p>
+                    <div>
+                        <span class="music_line">
+                            <span class="play_line"></span>
+                        </span>
+                    </div>
+                    <p class="time">03:45</p>
+                </div>
+            </div>
+            <div class="music_tools">
+                
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+    <script src="https://kit.fontawesome.com/66c64375dc.js" crossorigin="anonymous"></script>
+</body>
+</html>
