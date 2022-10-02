@@ -1,2 +1,2 @@
 # Front_end
-try to create  front of spotify 😊👀
+🔴 Let's build Spotify 2.0 with HTML/CSS and Js
